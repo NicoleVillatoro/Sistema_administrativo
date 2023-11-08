@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1>Sistema Administrativo</h1>
+  <div id="menu">
+    <button class="button" id="ventas">Registro de Ventas</button>
+    <button class="button" id="usuarios">Administración de Usuarios</button>
+    <button class="button" id="reportes">Reportes</button>
+    <button class="button" id="ayuda">Ayuda</button>
+  </div>
+  
+
+  <div id="submenu" class="hidden">
+    <button class="button" id="empleados">Empleados</button>
+    <button class="button" id="clientes">Clientes</button>
+    <button class="button" id="proveedores">Proveedores</button>
+    <button class="button" id="productos">Productos</button>
+  </div>
+  
+
+  <div id="acciones" class="hidden">
+    <button class="button" id="alta">Alta</button>
+    <button class="button" id="baja">Baja</button>
+    <button class="button" id="modificacion">Modificación</button>
+  </div>
+
+  <div id="formulario" class="hidden">
+    <!-- Campos de formulario se generarán dinámicamente según la opción seleccionada -->
+  </div>
+
+  <button class="button" id="cancelar" style="display:none;">Cancelar</button>
+  <div id="mensaje" class="hidden">
+    <p>Todos los campos deben ser llenados.</p>
+  </div>
+
+  <div id="ayuda" class="ayuda hidden">
+    <h2>Ayuda</h2>
+    <ul>
+      <li><a href="#" class="faq-link" data-target="pregunta1">¿Pregunta 1?</a></li>
+      <li><a href="#" class="faq-link" data-target="pregunta2">¿Pregunta 2?</a></li>
+      <li><a href="#" class="faq-link" data-target="pregunta3">¿Pregunta 3?</a></li>
+    </ul>
+    <div id="pregunta1" class="faq hidden">
+      <p>Respuesta a la Pregunta 1.</p>
+      <a href="#" class="respuesta-link">Ver respuesta</a>
+    </div>
+    <div id="pregunta2" class="faq hidden">
+      <p>Respuesta a la Pregunta 2.</p>
+      <a href="#" class="respuesta-link">Ver respuesta</a>
+    </div>
+    <div id="pregunta3" class="faq hidden">
+      <p>Respuesta a la Pregunta 3.</p>
+      <a href="#" class="respuesta-link">Ver respuesta</a>
+    </div>
+  </div>
+
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
